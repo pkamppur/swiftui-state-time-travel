@@ -47,16 +47,14 @@ struct HistoryContainerView: View {
         VStack {
             HStack {
                 Button("< Prev") {
-                    stateIndex -= 1
-                    state = stateHistory[stateIndex]
+                    goToPreviousState()
                 }
                 .disabled(stateIndex <= 0)
                 
                 Text(" -- \(stateIndex) -- ")
                 
                 Button("Next >") {
-                    stateIndex += 1
-                    state = stateHistory[stateIndex]
+                    goToNextState()
                 }
                 .disabled(stateIndex >= stateHistory.count - 1)
             }
@@ -69,6 +67,16 @@ struct HistoryContainerView: View {
         stateHistory.removeSubrange((stateIndex + 1)..<stateHistory.count)
         stateHistory += [newState]
         stateIndex += 1
+    }
+    
+    private func goToPreviousState() {
+        stateIndex -= 1
+        state = stateHistory[stateIndex]
+    }
+    
+    private func goToNextState() {
+        stateIndex += 1
+        state = stateHistory[stateIndex]
     }
 }
 
