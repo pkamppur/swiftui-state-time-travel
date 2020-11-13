@@ -14,6 +14,7 @@ struct BoxList: View {
         VStack {
             AddButton(boxes: $boxes)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                .background(Color.white) // Fixes gesture handling for toggling history bar
 
             List(boxes, id: \.name) {
                 BoxView(box: $0)

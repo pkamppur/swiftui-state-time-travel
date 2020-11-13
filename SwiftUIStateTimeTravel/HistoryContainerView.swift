@@ -11,10 +11,13 @@ struct HistoryContainerView: View {
     @State private var stateHistory = [AppState]()
     @State private var stateIndex = -1
     @State private var state = sampleAppState()
+    @State private var showHistoryBar = false
 
     var body: some View {
         VStack(alignment: .leading) {
-            historyBar()
+            if showHistoryBar {
+                historyBar()
+            }
             
             BoxList(boxes: $state.boxes) // pass in only subset of global app data to minimize updates (I hope)
             BoxFooter(boxes: $state.boxes)
@@ -33,6 +36,11 @@ struct HistoryContainerView: View {
             if stateIndex == -1 {
                 stateIndex = 0
                 stateHistory = [state]
+            }
+        }
+        .onTapGesture(count: 2) {
+            withAnimation() {
+                showHistoryBar = !showHistoryBar
             }
         }
     }

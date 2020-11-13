@@ -19,5 +19,6 @@ struct BoxFooter: View {
             Text("Box count: \(boxes.count)")
                 .padding()
         )
+        .background(Color.white) // Fixes gesture handling for toggling history bar
     }
 }
