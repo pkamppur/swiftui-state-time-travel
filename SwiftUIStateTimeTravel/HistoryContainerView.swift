@@ -14,6 +14,8 @@ struct HistoryContainerView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            historyBar()
+            
             BoxList(boxes: $state.boxes) // pass in only subset of global app data to minimize updates (I hope)
             BoxFooter(boxes: $state.boxes)
         }
@@ -32,6 +34,26 @@ struct HistoryContainerView: View {
                 stateIndex = 0
                 stateHistory = [state]
             }
+        }
+    }
+    
+    private func historyBar() -> some View {
+        VStack {
+            HStack {
+                Button("< Prev") {
+                    stateIndex -= 1
+                    state = stateHistory[stateIndex]
+                }
+                .disabled(stateIndex <= 0)
+                Text(" -- \(stateIndex) -- ")
+                Button("Next >") {
+                    stateIndex += 1
+                    state = stateHistory[stateIndex]
+                }
+                .disabled(stateIndex >= stateHistory.count - 1)
+            }
+            
+            Divider()
         }
     }
 }
