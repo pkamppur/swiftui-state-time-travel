@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B926051255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926050255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift */; };
-		2B926053255B082A009CDA45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926052255B082A009CDA45 /* ContentView.swift */; };
+		2B926053255B082A009CDA45 /* HistoryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926052255B082A009CDA45 /* HistoryContainerView.swift */; };
 		2B926055255B082C009CDA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B926054255B082C009CDA45 /* Assets.xcassets */; };
 		2B926058255B082C009CDA45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B926057255B082C009CDA45 /* Preview Assets.xcassets */; };
 		2B926063255B082C009CDA45 /* SwiftUIStateTimeTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926062255B082C009CDA45 /* SwiftUIStateTimeTravelTests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		2B92604D255B082A009CDA45 /* SwiftUIStateTimeTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStateTimeTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B926050255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStateTimeTravelApp.swift; sourceTree = "<group>"; };
-		2B926052255B082A009CDA45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B926052255B082A009CDA45 /* HistoryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContainerView.swift; sourceTree = "<group>"; };
 		2B926054255B082C009CDA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B926057255B082C009CDA45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B926059255B082C009CDA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2B926050255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift */,
-				2B926052255B082A009CDA45 /* ContentView.swift */,
+				2B926052255B082A009CDA45 /* HistoryContainerView.swift */,
 				2B926054255B082C009CDA45 /* Assets.xcassets */,
 				2B926059255B082C009CDA45 /* Info.plist */,
 				2B926056255B082C009CDA45 /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B926053255B082A009CDA45 /* ContentView.swift in Sources */,
+				2B926053255B082A009CDA45 /* HistoryContainerView.swift in Sources */,
 				2B926051255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

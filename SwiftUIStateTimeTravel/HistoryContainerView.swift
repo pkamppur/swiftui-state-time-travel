@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HistoryContainerView.swift
 //  SwiftUIStateTimeTravel
 //
 //  Created by Petteri Kamppuri on 10.11.2020.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HistoryContainerView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HistoryContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HistoryContainerView()
     }
 }
