@@ -34,9 +34,7 @@ struct HistoryContainerView: View {
                 return
             }
 
-            stateHistory.removeSubrange((stateIndex + 1)..<stateHistory.count)
-            stateHistory += [newState]
-            stateIndex += 1
+            recordState(newState)
         }
         .onTapGesture(count: 2) {
             withAnimation() {
@@ -63,6 +61,12 @@ struct HistoryContainerView: View {
             
             Divider()
         }
+    }
+    
+    private func recordState(_ newState: AppState) {
+        stateHistory.removeSubrange((stateIndex + 1)..<stateHistory.count)
+        stateHistory += [newState]
+        stateIndex += 1
     }
 }
 
