@@ -51,7 +51,9 @@ struct HistoryContainerView: View {
                     state = stateHistory[stateIndex]
                 }
                 .disabled(stateIndex <= 0)
+                
                 Text(" -- \(stateIndex) -- ")
+                
                 Button("Next >") {
                     stateIndex += 1
                     state = stateHistory[stateIndex]
