@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct HistoryContainerView: View {
+    @State private var state = sampleAppState()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading) {
+            BoxList(boxes: $state.boxes) // pass in only subset of global app data to minimize updates (I hope)
+            BoxFooter(boxes: $state.boxes)
+        }
     }
 }
 
