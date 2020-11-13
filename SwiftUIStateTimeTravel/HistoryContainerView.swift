@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct HistoryContainerView: View {
-    @State private var stateHistory = [AppState]()
-    @State private var stateIndex = -1
-    @State private var state = sampleAppState()
+    @State private var state: AppState
+    @State private var stateHistory: [AppState]
+    @State private var stateIndex = 0
     @State private var showHistoryBar = false
 
+    init() {
+        let initialState = sampleAppState()
+        _state = .init(initialValue: initialState)
+        _stateHistory = .init(initialValue: [initialState])
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             if showHistoryBar {
@@ -31,12 +37,6 @@ struct HistoryContainerView: View {
             stateHistory.removeSubrange((stateIndex + 1)..<stateHistory.count)
             stateHistory += [newState]
             stateIndex += 1
-        }
-        .onAppear() {
-            if stateIndex == -1 {
-                stateIndex = 0
-                stateHistory = [state]
-            }
         }
         .onTapGesture(count: 2) {
             withAnimation() {
