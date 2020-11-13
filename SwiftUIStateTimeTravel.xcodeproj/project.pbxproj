@@ -15,6 +15,7 @@
 		2B92606E255B082C009CDA45 /* SwiftUIStateTimeTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B92606D255B082C009CDA45 /* SwiftUIStateTimeTravelUITests.swift */; };
 		2B92607F255B2913009CDA45 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B92607E255B2913009CDA45 /* UIColor+extensions.swift */; };
 		2B926089255B29A0009CDA45 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926088255B29A0009CDA45 /* AppState.swift */; };
+		2B926099255B2CBF009CDA45 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B926098255B2CBF009CDA45 /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2B92606F255B082C009CDA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B92607E255B2913009CDA45 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		2B926088255B29A0009CDA45 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2B926098255B2CBF009CDA45 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2B926050255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift */,
 				2B926088255B29A0009CDA45 /* AppState.swift */,
 				2B926052255B082A009CDA45 /* HistoryContainerView.swift */,
+				2B926098255B2CBF009CDA45 /* AddButton.swift */,
 				2BEBA97C255EFE1700A42754 /* Utils */,
 				2B926054255B082C009CDA45 /* Assets.xcassets */,
 				2B926059255B082C009CDA45 /* Info.plist */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B926053255B082A009CDA45 /* HistoryContainerView.swift in Sources */,
+				2B926099255B2CBF009CDA45 /* AddButton.swift in Sources */,
 				2B926089255B29A0009CDA45 /* AppState.swift in Sources */,
 				2B926051255B082A009CDA45 /* SwiftUIStateTimeTravelApp.swift in Sources */,
 				2B92607F255B2913009CDA45 /* UIColor+extensions.swift in Sources */,
