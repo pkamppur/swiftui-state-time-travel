@@ -55,6 +55,7 @@
 		2B926088255B29A0009CDA45 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2B92608D255B29FD009CDA45 /* BoxFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxFooter.swift; sourceTree = "<group>"; };
 		2B926098255B2CBF009CDA45 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		2BA480DC255FEA4800236EB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		2B926044255B082A009CDA45 = {
 			isa = PBXGroup;
 			children = (
+				2BA480DC255FEA4800236EB3 /* README.md */,
 				2B92604F255B082A009CDA45 /* SwiftUIStateTimeTravel */,
 				2B926061255B082C009CDA45 /* SwiftUIStateTimeTravelTests */,
 				2B92606C255B082C009CDA45 /* SwiftUIStateTimeTravelUITests */,
