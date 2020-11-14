@@ -12,12 +12,7 @@ struct AddButton: View {
     
     var body: some View {
         Button("Add") {
-            boxes += [
-                Box(
-                    name: "untitled \(boxes.count + 1)",
-                    color: UIColor.random
-                )
-            ]
+            boxes += [ Box.random(i: boxes.count + 1) ]
         }
         .padding()
     }

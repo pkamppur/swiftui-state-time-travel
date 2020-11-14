@@ -25,6 +25,13 @@ extension Box {
     var backgroundColor: Color {
         Color(color)
     }
+    
+    static func random(i: Int) -> Box {
+        Box(
+            name: "untitled \(i)",
+            color: UIColor.random
+        )
+    }
 }
 
 func sampleAppState() -> AppState {
